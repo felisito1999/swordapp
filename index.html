@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bleach professional blades site</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Texturina:wght@300&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/styles/styles.css" />
+    </head>
+    <body>
+        <main>
+            <section class="center" id="canvas-area"></section>
+            <section class="container text-light">
+                <ul class="options-menu">
+                    <li class="option-menu-item">
+                        <p >Price: </p>
+                        <p><span id="sword-price"></span> USD</p>
+                    </li>
+                    <li class="option-menu-item">
+                        <label class="option-title" for="sword-sizePicker"
+                            >Pick Zangetsu's size: (1 meter - 5 meters)</label
+                        >
+                        <input
+                            class="option-selector"
+                            id="sword-sizePicker"
+                            name="sword-sizePicker"
+                            min="1"
+                            max="5"
+                            step="0.1"
+                            value="1"
+                            type="range"
+                        />
+                        <p><span id="zangetsu-size-display">1</span> meter(s)</p>
+                    </li>
+                    <li class="option-menu-item">
+                        <label
+                            class="option-title"
+                            for="sword-blade-colorPicker"
+                            >Pick Zangetsu's blade color:</label
+                        >
+                    </li>
+                    <li class="option-menu-item">
+                        <input
+                            class="color-radio-button rb-white"
+                            type="radio"
+                            name="blade-color"
+                            checked="true"
+                            value="#FFFFFF"
+                            id="white-blade"
+                        />
+                        <label class="label-vertical-center" for="white-blade"
+                            >White</label
+                        ><br />
+
+                        <input
+                            class="color-radio-button rb-red"
+                            type="radio"
+                            name="blade-color"
+                            value="#FF1319"
+                            id="red-blade"
+                        />
+                        <label class="label-vertical-center" for="red-blade"
+                            >Red</label
+                        ><br />
+
+                        <input
+                            class="color-radio-button rb-black"
+                            type="radio"
+                            name="blade-color"
+                            value="#000000"
+                            id="black-blade"
+                        />
+                        <label class="label-vertical-center" for="black-blade"
+                            >Black</label
+                        ><br />
+                        <input
+                            class="color-radio-button rb-orange"
+                            type="radio"
+                            name="blade-color"
+                            value="#FF781F"
+                            id="orange-blade"
+                        />
+                        <label class="label-vertical-center" for="orange-blade"
+                            >Orange</label
+                        ><br />
+                        <input
+                            class="color-radio-button rb-gold"
+                            type="radio"
+                            name="blade-color"
+                            value="#D4AF37"
+                            id="gold-blade"
+                        />
+                        <label class="label-vertical-center" for="gold-blade"
+                            >Gold</label
+                        >
+                    </li>
+                    <li class="option-menu-item">
+                        <label
+                            class="option-title"
+                            for="sword-handle-colorPicker"
+                            >Pick Zangetsu's grip color:
+                        </label>
+                    </li>
+                    <li class="option-menu-item">
+                      <input
+                          class="color-radio-button rb-white"
+                          type="radio"
+                          name="grip-color"                          
+                          value="#FFFFFF"
+                          id="white-grip"
+                      />
+                      <label class="label-vertical-center" for="white-grip"
+                          >White</label
+                      ><br />
+
+                      <input
+                          class="color-radio-button rb-red"
+                          type="radio"
+                          checked="true"
+                          name="grip-color"
+                          value="#FF1319"
+                          id="red-grip"
+                      />
+                      <label class="label-vertical-center" for="red-grip"
+                          >Red</label
+                      ><br />
+
+                      <input
+                          class="color-radio-button rb-black"
+                          type="radio"
+                          name="grip-color"
+                          value="#000000"
+                          id="black-grip"
+                      />
+                      <label class="label-vertical-center" for="black-grip"
+                          >Black</label
+                      ><br />
+                      <input
+                          class="color-radio-button rb-orange"
+                          type="radio"
+                          name="grip-color"
+                          value="#FF781F"
+                          id="orange-grip"
+                      />
+                      <label class="label-vertical-center" for="orange-grip"
+                          >Orange</label
+                      ><br />
+                      <input
+                          class="color-radio-button rb-gold"
+                          type="radio"
+                          name="grip-color"
+                          value="#D4AF37"
+                          id="gold-grip"
+                      />
+                      <label class="label-vertical-center" for="gold-grip"
+                          >Gold</label
+                      >
+                  </li>
+                </ul>
+            </section>
+        </main>
+        <footer></footer>
+        <script src="/threejs/three.js"></script>
+        <script src="/threejs/GLTFLoader.js"></script>
+        <script src="/threejs/OrbitControls.js"></script>
+        <script src="/js/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,215 @@
+:root {
+    font-family: "Texturina", serif;
+    background-color: #222222;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+#zangetsu-size-display{
+  font-weight: bolder;
+}
+
+#canvas-area {
+
+  background-color: #2e2e2e;
+
+}
+#canvas-area:only-child{
+  height: auto;
+  width: auto;
+  text-align: center;
+}
+.options-menu {
+    list-style: none;
+    background-color: #2e2e2e;
+    padding: 5% 10%;
+}
+.option-menu-item {
+    margin-bottom: 25px;
+}
+.container {
+    margin: auto;
+    width: 80%;
+}
+.container ul {
+    margin: 0px;
+}
+.option-selector {
+    display: block;
+    margin-top: 25px;
+}
+.center {
+    margin: 0% 10%;
+    width: 80%;
+    text-align: center;
+}
+.text-light {
+    color: #f2f2f2;
+}
+input.rb-white {
+    background-color: #ffffff;
+}
+input.rb-white:checked {
+    border-color: #000000;
+}
+#sword-price  {
+  font-size: 36px;
+}
+#white-blade {
+    border-color: #000000;
+}
+#white-blade:checked {
+    border-color: #000000;
+}
+#white-grip {
+  border-color: #000000;
+}
+#white-grip:checked {
+  border-color: #000000;
+}
+input.rb-red {
+    background-color: #ff1319;
+}
+input.rb-black {
+    background-color: #000000;
+}
+input.rb-orange {
+    background-color: #ff781f;
+}
+input.rb-gold {
+    background-color: #d4af37;
+}
+input.color-radio-button {
+    height: 48px;
+    width: 48px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    vertical-align: middle;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: azure;
+    margin-bottom: 10px;
+}
+.label-vertical-center label {
+    text-align: center;
+    height: 48px;
+    vertical-align: middle;
+}
+
+input.color-radio-button:checked {
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 6px;
+    border-color: azure;
+
+    box-shadow: 0 0 10px azure;
+}
+
+input.color-radio-button:checked + label {
+    font-weight: bolder;
+}
+.option-title {
+    font-size: 24px;
+}
+
+/* Styling the size range */
+
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 36px 0;
+  width: 100%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background:#222222;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -14px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #222222;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #222222;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #222222;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-fill-upper {
+  background: #222222;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #222222;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #222222;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    margin: 0;
+    width: 100%;
+  }
+  .center {
+    margin: 0; 
+    width: 100%;
+  }
+}
