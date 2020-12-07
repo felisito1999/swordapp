@@ -103,7 +103,7 @@ scene.add(light);
 
 const loader = new THREE.GLTFLoader();
 loader.load(
-    "/model/fbIchigoSword.gltf",
+    "https://felisito1999.github.io/swordapp/model/fbIchigoSword.gltf",
     function (gltf) {
         sword = gltf.scene.children[0];
 
